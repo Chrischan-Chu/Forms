@@ -1,0 +1,28 @@
+<div class="form-container">
+  <form #submitForm="ngForm" (ngSubmit)="onSubmit()">
+    <h2>Submit your information</h2>
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input id="username" class="input-box" type="text" name="username" [(ngModel)]="username" placeholder="Enter your username" required>
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input id="email" class="input-box" type="email" name="email" [(ngModel)]="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="input-group">
+      <label for="contact">Contact</label>
+      <input id="contact" class="input-box" type="tel" name="contact" [(ngModel)]="contact" placeholder="Enter your contact number" required pattern="^[0-9]{10,12}$">
+    </div>
+
+    <button class="btn" type="submit" [disabled]="!submitForm.valid">Submit</button>
+  </form>
+</div>
+
+<div *ngIf="submitted" class="submitted-container">
+  <h3>Submitted Information</h3>
+  <p><strong>Username:</strong> {{ username }}</p>
+  <p><strong>Email:</strong> {{ email }}</p>
+  <p><strong>Contact:</strong> {{ contact }}</p>
+</div>
