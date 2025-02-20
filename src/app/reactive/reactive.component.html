@@ -1,0 +1,42 @@
+<body>
+	<h3>Christian Ralph R. Tan | WD - 302</h3>
+<div>
+  <form [formGroup]="formdata" (ngSubmit) = "onClickSubmit(formdata.value)">
+    <h2>Submit your Information</h2>
+
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input id="username" class="input-box" type="text" formControlName="username" placeholder="Enter your username">
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input id="email" class="input-box" type="email" formControlName="email" placeholder="Enter your email">
+    </div>
+
+    <div class="input-group">
+      <label for="contact">Contact</label>
+      <input id="contact" class="input-box" type="tel" formControlName="contact" placeholder="Enter your contact number">
+    </div>
+
+    <div class="input-group">
+      <label for="address">Address</label>
+      <input id="address" class="input-box" type="text" formControlName="address" placeholder="Enter your address">
+    </div>
+
+    <div class="input-group">
+      <label for="comment">Comment</label>
+      <textarea id="comment" class="input-box comment-box" formControlName="comment" placeholder="Enter your comment"></textarea>
+    </div>
+
+    <input class="btn" type="submit" value="Submit">
+  </form>
+</div>
+
+<p><strong>Submitted Information:</strong></p>
+<p><strong>Username:</strong> {{ username }}</p>
+<p><strong>Email:</strong> {{ email }}</p>
+<p><strong>Contact:</strong> {{ contact }}</p>
+<p><strong>Address:</strong> {{ address }}</p>
+<p><strong>Comment:</strong> {{ comment }}</p>
+</body>

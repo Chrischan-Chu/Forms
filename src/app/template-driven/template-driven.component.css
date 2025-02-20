@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #6a0dad;
+  }
+  
+  h2 {
+    color: #6a0dad;
+  }
+  
+  .form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #6a0dad;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #caa1ff;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    background-color: #f9f0ff;
+    transition: border 0.3s;
+    box-sizing: border-box;
+  }
+  
+  .input-box:focus {
+    border-color: #6a0dad;
+  }
+  
+  .comment-box {
+    resize: none;
+    height: 80px;
+  }
+  
+  .btn {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+  }
+  
+  .btn:disabled {
+    background-color: #caa1ff;
+    cursor: not-allowed;
+  }
+  
+  .btn:hover:not(:disabled) {
+    background-color: #5c0099;
+  }
+  
+  .submitted-container {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e6d5ff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .submitted-container h3 {
+    color: #6a0dad;
+  }
+  
